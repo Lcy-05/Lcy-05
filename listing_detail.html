@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숙소 상세 - Stay Clean</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/listing_detail.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/sc_logo.png" alt="Stay Clean 로고" id="logo" onclick="window.location.href='index.html'">
+        <h1>숙소 상세</h1>
+    </header>
+    <main class="detail-container">
+        <div class="photo-gallery" id="photo-gallery">
+            <!-- 숙소 사진 갤러리가 여기에 표시됩니다. -->
+        </div>
+        <div class="listing-info">
+            <h2 id="listing-title">숙소 제목</h2>
+            <p id="listing-description">숙소 설명</p>
+            <p id="listing-price">가격: </p>
+            <p id="listing-cleanliness">청결도: </p>
+            <p id="listing-security">보안: </p>
+        </div>
+        <form id="reservation-form">
+            <input type="date" id="checkin" required>
+            <input type="date" id="checkout" required>
+            <input type="number" id="guests" placeholder="인원 수" required>
+            <label>
+                <input type="checkbox" id="cleaning-service"> 청소 서비스
+            </label>
+            <label>
+                <input type="checkbox" id="security-service"> 보안 서비스
+            </label>
+            <button type="submit">예약</button>
+        </form>
+        <!-- 리뷰 섹션 -->
+        <section id="reviews">
+            <h2>리뷰</h2>
+            <ul id="review-list">
+                <!-- 리뷰 아이템이 여기에 표시됩니다. -->
+            </ul>
+            <form id="review-form">
+                <textarea id="review-text" placeholder="리뷰를 작성하세요" required></textarea>
+                <button type="submit">리뷰 제출</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
